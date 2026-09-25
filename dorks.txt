@@ -1,0 +1,74 @@
+inurl:/bug bounty
+"we offer a bounty"
+intext:security report reward inurl:report
+intext:security report monetary inurl:security
+intext:bounty inurl:/security
+inurl:security "reward"
+"responsible disclosure" AND (monetary OR cash OR "gift card" OR crypto OR BTC)
+"vulnerability disclosure policy" AND (bounty OR reward OR swag)
+"If you find a security issue" "reward"
+"If you discover a vulnerability" AND (swag OR monetary OR cash)
+"We value security researchers" OR "We appreciate security reports" AND (reward OR bounty)
+"responsible disclosure" intext:"you may be eligible for monetary compensation"
+intext:responsible disclosure bounty
+responsible disclosure swag r=h:com
+site:*.*.* inurl:bug inurl:bounty
+site:help.*.* inurl:bounty
+site:support.*.* intext:security report reward
+site:security.*.* inurl:bounty
+"cms" bug bounty
+inurl:/.well-known/security.txt "bounty" OR "reward"
+inurl:/.well-known/security.txt intext:bounty -hackerone -bugcrowd -synack
+site:*/security.txt "bounty"
+"security.txt" AND ("mailto" OR "contact") AND (bounty OR reward)
+"security.txt" AND "PGP" AND (bounty OR reward)
+"security@*" AND "bug bounty" ext:txt
+inurl:vulnerability-disclosure-policy reward
+inurl:/responsible-disclosure/ reward
+inurl:/responsible-disclosure/ swag
+inurl:/responsible-disclosure/ bounty
+inurl:'/responsible disclosure' hoodie
+inurl:responsible disclosure $50
+inurl:/security/index.html intext:bounty
+inurl:/legal/security intext:monetary
+inurl:bug bounty intext:"rupees"
+inurl:bug bounty intext:"₹"
+inurl:responsible disclosure intext:"INR"
+inurl:"bug bounty" and intext:"€" and inurl:/security
+inurl:"bug bounty" and intext:"$" and inurl:/security
+inurl:"bug bounty" and intext:"INR" and inurl:/security
+intext:"BugBounty" and intext:"BTC" and intext:"reward"
+site:edu "responsible disclosure" AND (reward OR swag OR bounty)
+site:edu intext:"we run a bug bounty program"
+site:gov* "bug bounty" AND (reward OR cash OR monetary)
+site:gov* inurl:/security intext:contact intext:reward
+responsible disclosure bounty r=h:nl
+responsible disclosure bounty r=h:uk
+responsible disclosure bounty r=h:eu
+responsible disclosure swag r=h:nl
+responsible disclosure swag r=h:uk
+responsible disclosure swag r=h:eu
+responsible disclosure reward r=h:nl
+responsible disclosure reward r=h:uk
+responsible disclosure reward r=h:eu
+site:*.*.nl intext:security report reward
+site:*.*.nl intext:responsible disclosure reward
+site:*.*.de inurl:bug inurl:bounty
+site:*.*.uk intext:security report reward
+site:*.*.cn intext:security report reward
+site:*.ca intext:"responsible disclosure" intext:reward
+site:*.jp intext:"vulnerability report" intext:swag
+site:*.it intext:"bug bounty" OR intext:"security reward"
+site:*.ch filetype:txt inurl:security intext:bounty
+site:*.fr intext:"bug bounty" OR "prime de sécurité"
+site:*.pl inurl:/bezpieczenstwo intext:nagroda
+site:*.dk inurl:/sikkerhed intext:dusør
+site:*.no inurl:/sikkerhet intext:belønning
+site:*.es inurl:/seguridad intext:recompensa
+"powered by bugcrowd" "bounty" -site:bugcrowd.com
+"powered by synack" "reward"
+"powered by yeswehack" OR "powered by federacy" OR "powered by intigriti" "bounty" -site:yeswehack.com -site:federacy.com -site:intigriti.com
+"van de melding met een minimum van een" -site:responsibledisclosure.nl
+inurl:/bug-bounty.json
+intext:"Powered by Bug Bounty HQ"
+filetype:txt security reward rewards -"we currently" -"we do not" -"not offer" -"no compensation"
