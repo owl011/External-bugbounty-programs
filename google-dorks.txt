@@ -1,4 +1,7 @@
-inurl: /bug bounty
+inurl /bug bounty
+inurl : / security
+inurl:security.txt
+inurl:security "reward"
 "we offer a bounty"
 intext:security report reward inurl:report
 intext:security report monetary inurl:security
